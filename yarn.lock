@@ -22,11 +22,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arethetypeswrong/cli@npm:^0.15.3":
-  version: 0.15.4
-  resolution: "@arethetypeswrong/cli@npm:0.15.4"
+"@arethetypeswrong/cli@npm:^0.18.2":
+  version: 0.18.2
+  resolution: "@arethetypeswrong/cli@npm:0.18.2"
   dependencies:
-    "@arethetypeswrong/core": "npm:0.15.1"
+    "@arethetypeswrong/core": "npm:0.18.2"
     chalk: "npm:^4.1.2"
     cli-table3: "npm:^0.6.3"
     commander: "npm:^10.0.1"
@@ -35,21 +35,23 @@ __metadata:
     semver: "npm:^7.5.4"
   bin:
     attw: dist/index.js
-  checksum: 10/3ae2a01e269300b3528a7963b36d53324f140e709c5e08da6e8c118b84607859dfef9236059ffb18b5eefe88c0df858989522f943c0a7bdcdb78f43513d57005
+  checksum: 10/8b4506edeb37d58f15e347302df68981c5aefecce973e746026d46370bb560c1ebc05ef8a38eba3102881df4cd3c901961186e3df41077efca4e58adffd455a1
   languageName: node
   linkType: hard
 
-"@arethetypeswrong/core@npm:0.15.1":
-  version: 0.15.1
-  resolution: "@arethetypeswrong/core@npm:0.15.1"
+"@arethetypeswrong/core@npm:0.18.2":
+  version: 0.18.2
+  resolution: "@arethetypeswrong/core@npm:0.18.2"
   dependencies:
     "@andrewbranch/untar.js": "npm:^1.0.3"
+    "@loaderkit/resolve": "npm:^1.0.2"
+    cjs-module-lexer: "npm:^1.2.3"
     fflate: "npm:^0.8.2"
+    lru-cache: "npm:^11.0.1"
     semver: "npm:^7.5.4"
-    ts-expose-internals-conditionally: "npm:1.0.0-empty.0"
-    typescript: "npm:5.3.3"
+    typescript: "npm:5.6.1-rc"
     validate-npm-package-name: "npm:^5.0.0"
-  checksum: 10/af07d7d0d93926b019d8dc412cee251db972e443be181ef4ef79d28d61f76542b2911a381397ab3ddc23d9a669d830994b4f3b0033f8244f3750027f319595af
+  checksum: 10/9c3edeb8e09e572682e37f55bd523d0dad45388232d31fa1d8875f7f5c414a184070c2bb6d0c8f254dfce4ed9248da373d549ecdeaa571a0cfff04c387c94cf1
   languageName: node
   linkType: hard
 
@@ -225,6 +227,13 @@ __metadata:
     "@babel/helper-string-parser": "npm:^7.27.1"
     "@babel/helper-validator-identifier": "npm:^7.28.5"
   checksum: 10/bfc2b211210f3894dcd7e6a33b2d1c32c93495dc1e36b547376aa33441abe551ab4bc1640d4154ee2acd8e46d3bbc925c7224caae02fcaf0e6a771e97fccc661
+  languageName: node
+  linkType: hard
+
+"@braidai/lang@npm:^1.0.0":
+  version: 1.1.2
+  resolution: "@braidai/lang@npm:1.1.2"
+  checksum: 10/04ece1b744eb8b6c2417afe220ad96c7078f83ed533117cc49300b6322f6b58f5e649c80bd990c27e2d16bfdd976481d5252ff3206b7069fc863890ab1b96277
   languageName: node
   linkType: hard
 
@@ -890,6 +899,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@loaderkit/resolve@npm:^1.0.2":
+  version: 1.0.6
+  resolution: "@loaderkit/resolve@npm:1.0.6"
+  dependencies:
+    "@braidai/lang": "npm:^1.0.0"
+  checksum: 10/73b4551ead53430490a1571086b84243cffd0b0cf87889b292ef11791638d8406e794c99153af311cc2555af4c0d04b68d1a170d51244658fd0d7e34da018666
+  languageName: node
+  linkType: hard
+
 "@metamask/auto-changelog@npm:^5.3.0":
   version: 5.3.2
   resolution: "@metamask/auto-changelog@npm:5.3.2"
@@ -911,7 +929,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@metamask/create-gator-app@workspace:."
   dependencies:
-    "@arethetypeswrong/cli": "npm:^0.15.3"
+    "@arethetypeswrong/cli": "npm:^0.18.2"
     "@lavamoat/allow-scripts": "npm:^3.0.4"
     "@lavamoat/preinstall-always-fail": "npm:^2.0.0"
     "@metamask/auto-changelog": "npm:^5.3.0"
@@ -2623,7 +2641,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cjs-module-lexer@npm:^1.3.1":
+"cjs-module-lexer@npm:^1.2.3, cjs-module-lexer@npm:^1.3.1":
   version: 1.4.3
   resolution: "cjs-module-lexer@npm:1.4.3"
   checksum: 10/d2b92f919a2dedbfd61d016964fce8da0035f827182ed6839c97cac56e8a8077cfa6a59388adfe2bc588a19cef9bbe830d683a76a6e93c51f65852062cfe2591
@@ -4533,6 +4551,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^11.0.1":
+  version: 11.5.0
+  resolution: "lru-cache@npm:11.5.0"
+  checksum: 10/c02af3d6e5e5baff9b52ed1a0850dc97e21a2554308c0feab5663873f9b395ea66b2767ead6e347542c08ab89b04aadb92884eddbcd14d975505687530df99e8
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^5.1.1":
   version: 5.1.1
   resolution: "lru-cache@npm:5.1.1"
@@ -6265,13 +6290,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-expose-internals-conditionally@npm:1.0.0-empty.0":
-  version: 1.0.0-empty.0
-  resolution: "ts-expose-internals-conditionally@npm:1.0.0-empty.0"
-  checksum: 10/6b4f546fc59f04f68d579f1bc0704541ec17521f84d32a15b45bef5dbc7a787143a065e19541cc5b64ff494f16f223bce59f3f5bf10ec538e5739e23c0efb878
-  languageName: node
-  linkType: hard
-
 "ts-node@npm:^10.7.0":
   version: 10.9.2
   resolution: "ts-node@npm:10.9.2"
@@ -6372,13 +6390,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.3.3":
-  version: 5.3.3
-  resolution: "typescript@npm:5.3.3"
+"typescript@npm:5.6.1-rc":
+  version: 5.6.1-rc
+  resolution: "typescript@npm:5.6.1-rc"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/6e4e6a14a50c222b3d14d4ea2f729e79f972fa536ac1522b91202a9a65af3605c2928c4a790a4a50aa13694d461c479ba92cedaeb1e7b190aadaa4e4b96b8e18
+  checksum: 10/5716659d5baf142b5c84b96209b30730a5e9dcc0202f879349f9974823f7452ec4ef3904397b6d89d861c688acdbb1dad0a449d753163519fae2ee06ea4a68be
   languageName: node
   linkType: hard
 
@@ -6392,13 +6410,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>":
-  version: 5.3.3
-  resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
+"typescript@patch:typescript@npm%3A5.6.1-rc#optional!builtin<compat/typescript>":
+  version: 5.6.1-rc
+  resolution: "typescript@patch:typescript@npm%3A5.6.1-rc#optional!builtin<compat/typescript>::version=5.6.1-rc&hash=8c6c40"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/c93786fcc9a70718ba1e3819bab56064ead5817004d1b8186f8ca66165f3a2d0100fee91fa64c840dcd45f994ca5d615d8e1f566d39a7470fc1e014dbb4cf15d
+  checksum: 10/462e0bb46c63abfc5bfc43f2bb00b9777a4228f3ed52d8930b46404dce71dbada63c27a99262ff4570b5ff7d01455701bfd36823bd3c766e443b6fa33cd31dea
   languageName: node
   linkType: hard
 
