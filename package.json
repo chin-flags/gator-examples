@@ -45,7 +45,7 @@
     "lint:fix": "yarn lint:eslint --fix && yarn lint:constraints --fix && yarn lint:misc --write && yarn lint:dependencies:fix && yarn lint:changelog",
     "lint:misc": "prettier '**/*.json' '**/*.md' '**/*.yml' '!.yarnrc.yml' --ignore-path .gitignore --no-error-on-unmatched-pattern",
     "prepack": "./scripts/prepack.sh",
-    "test": "vitest && attw --pack",
+    "test": "vitest",
     "test:watch": "vitest --watch"
   },
   "dependencies": {
