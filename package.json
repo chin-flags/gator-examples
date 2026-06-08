@@ -48,6 +48,9 @@
     "test": "vitest && attw --pack",
     "test:watch": "vitest --watch"
   },
+  "resolutions": {
+    "fflate": "0.8.2"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^13.1.0",
@@ -91,7 +94,7 @@
     "vite": "^6.4.1",
     "vitest": "^3.0.7"
   },
-  "packageManager": "yarn@4.10.3",
+  "packageManager": "yarn@4.16.0",
   "engines": {
     "node": "^20 || ^22 || >=24"
   },
