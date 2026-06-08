@@ -12,7 +12,7 @@
     "@metamask/sdk": "~0.33.1",
     "@metamask/smart-accounts-kit": "^1.5.0",
     "@tanstack/react-query": "^5.90.21",
-    "next": "15.4.10",
+    "next": "15.5.18",
     "permissionless": "^0.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
