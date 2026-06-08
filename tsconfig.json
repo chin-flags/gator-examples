@@ -14,5 +14,5 @@
     "skipLibCheck": true,
     "target": "ES2020"
   },
-  "exclude": ["./dist", "**/node_modules"]
+  "exclude": ["./dist", "./templates", "**/node_modules"]
 }

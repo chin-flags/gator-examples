@@ -3,11 +3,11 @@ import express, { type Request, type Response } from "express";
 import cors from "cors";
 import { paymentMiddleware } from "@x402/express";
 import { x402ResourceServer, HTTPFacilitatorClient } from "@x402/core/server";
-import { Erc7710ExactEvmScheme } from "./scheme.js";
+import { x402ExactEvmErc7710ServerScheme } from "@metamask/x402";
 
 config();
 
-const NETWORK_ID = "eip155:8453";
+const NETWORK_ID = "eip155:84532";
 const PORT = 4402;
 
 const payToAddress = process.env.PAY_TO_ADDRESS as string;
@@ -45,7 +45,7 @@ app.use(
     },
     new x402ResourceServer(facilitatorClient).register(
       NETWORK_ID,
-      new Erc7710ExactEvmScheme(facilitatorClient),
+      new x402ExactEvmErc7710ServerScheme(),
     ),
   ),
 );
